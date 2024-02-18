@@ -40,7 +40,7 @@ function App() {
        <h1>loading中です</h1>
      )
     : (
-   <div className=' pokemonCardContainer'>
+   <div className='pokemonCardContainer'>
      {pokemonData.map((pokemon ,index) => {
        return <Card  key={index}  pokemon={pokemon}/>;
      })}
