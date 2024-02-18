@@ -2,6 +2,7 @@ import { getAllpokemon,getPokemon } from './utils/pokemon';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './Components/Card/Card';
+import NavBar from './Components/Navbar/NavBar';
 
 function App() {
   
@@ -35,6 +36,8 @@ function App() {
   console.log(pokemonData)
 
   return (
+    <>
+    <NavBar/>
    <div className='App'>
      {loading ? (
        <h1>loading中です</h1>
@@ -49,6 +52,7 @@ function App() {
     )
     }
    </div>
+   </>
   );
 }
 

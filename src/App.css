@@ -12,3 +12,10 @@
   place-items: center;
   margin-top: 20px;
 }
+
+@media screen and (max-width:768px){
+  .pokemonCardContainer{
+    display: flex;
+    flex-direction: column;
+  }
+}
